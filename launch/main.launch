@@ -1,0 +1,19 @@
+<launch>
+
+<!-- this file launches two node, one for the server and the second for the client -->
+
+<node pkg = 'wall_follower'
+      type = 'find_wall_service_server.py'
+      name = 'find_wall_server_node'
+      output = 'screen'>
+
+</node>
+
+<node pkg = 'wall_follower'
+      type = 'wall_follow_client.py'
+      name = 'wall_follower_client_node'
+      output = 'screen'>
+
+</node>
+
+</launch>
